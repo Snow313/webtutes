@@ -1,0 +1,20 @@
+body{
+
+
+    background:url(/Html/Tute5/pink-purple-texture-abstract\ -\ Copy.jpg)no-repeat;
+}
+body h1{
+    font-size: 50px;
+    text-align: center;
+    color: brown;
+}
+body p{
+    font-size: 30px;
+    color: cadetblue;
+    background-color:rgb(177, 157, 202);
+    width: 40%;
+    padding: 20%;
+    align-items: center;
+    
+    
+}

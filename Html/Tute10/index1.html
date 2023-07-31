@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="performMathOperations()">Perform Operations</button>
+
+    <script>
+        function performMathOperations() {
+            const num1 = parseFloat(prompt("Enter first number:"));
+            const num2 = parseFloat(prompt("Enter second number:"));
+
+            
+
+            const addition = num1 + num2;
+            const subtraction = num1 - num2;
+            const multiplication = num1 * num2;
+            const division = num1 / num2;
+
+            alert(`Addition: ${addition}\nSubtraction: ${subtraction}\nMultiplication: ${multiplication}\nDivision: ${division}`);
+        }
+    </script>
+</body>
+</html>

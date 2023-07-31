@@ -1,0 +1,11 @@
+body form input{
+    align-items: center;
+    position: relative;
+    left: 10%;
+}
+form label{
+    font-size: large;
+}
+input .fname{
+    left: 20px;
+}

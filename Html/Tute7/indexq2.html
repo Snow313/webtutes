@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+   
+    <button id="gradeButton">Grade</button>
+    <p id="result"></p>
+
+    <script>
+        let marks = []; 
+
+        
+        function calculateTotalAndAverage() {
+            if (marks.length !== 5) {
+                alert("enter 5 marks .");
+                return;
+            }
+
+            let total = 0;
+            for (let i = 0; i < marks.length; i++) {
+                total += marks[i];
+            }
+
+            const average = total / marks.length;
+
+            
+            const resultElement = document.getElementById('result');
+            resultElement.innerHTML = `Sum is: ${total}, Average is: ${average.toFixed(2)}`;
+
+            
+            if (average > 30) {
+                alert('Congrats! You passed');
+            } else {
+                alert('Better luck next time');
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            for (let i = 0; i < 5; i++) {
+                let mark = parseFloat(prompt(`Enter Mark ${i + 1}:`));
+
+                
+                while (isNaN(mark)) {
+                    mark = parseFloat(prompt(`Invalid input. Please enter a valid number for Mark ${i + 1}:`));
+                }
+
+                marks.push(mark);
+            }
+        });
+
+        document.getElementById('gradeButton').addEventListener('click', calculateTotalAndAverage);
+    </script>
+</body>
+</html>
